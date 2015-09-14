@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <title>Node Authentication</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" type="text/css" href="public/css/createThread.css"/>
+
+</head>
+<body>
+       <div class="container">
+
+    <div class="page-header text-center">
+        <h1 style="color:#0066FF"><span class="fa fa-user"></span>Create a New Debate Thread</h1>
+        <a href="/debate" class="btn btn-primary"><span class="fa fa-user"></span>Return to Debate Central</a>
+    </div>
+
+    <h1 style="color:#0066FF">Thread Info</h1>
+
+    <form action="debate-info" id="debateform"  enctype =  "multipart/form-data" method="POST">          
+       <div class="form-group">         
+        <label for= "usr" style="color:#0066FF">Thread Title</label>
+               <input type="text" class="form-control" id="title" name="title">
+       </div>    
+
+       <div class="form-group">
+            <label for="age" style="color:#0066FF"> <font size="4"><strong>Debate Format</strong></font></label>
+            <select data-style="btn-primary" id="format" name="format" class="form-control" >
+                <option>None</option>
+                <option>Yes or No</option>
+                <option>Agree or Disagree</option>
+                <option>For or Against</option>
+                <option>Player vs Player</option>
+                <option>Coach vs Coach</option>
+                <option>Team vs Team</option>
+                <option>Miscellaneous</option>
+            </select>
+        </div>
+        
+         <br />
+       <input type="submit" value="Submit" name="submit">
+        
+    </form>
+     <br />
+  
+
+</body>    
+
+       
+</div>
+</body>
+</html>

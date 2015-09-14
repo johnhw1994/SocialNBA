@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<title>Node Authentication</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	 <link rel="stylesheet" type="text/css" href="public/css/signup.css"/>
+	<style>
+		body 		{ padding-top:80px; }
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="col-sm-7 col-sm-offset-3">
+
+	<h1 align="center" style="color:#0066CC"><center><span class="fa fa-sign-in"></span> Signup for Social NBA</center></h1>
+
+	<% if (message.length > 0) { %>
+		<div class="alert alert-danger"><%= message %></div>
+	<% } %>
+
+	<!-- LOGIN FORM -->
+	<form action="/signup" method="post">
+		<div class="form-group">
+			<label style="color:#0066CC"><font size="5"<bold>Email</bold></font></label>
+			<input type="text" class="form-control" name="email">
+		</div>
+		<div class="form-group">
+			<label style="color:#0066CC"><font size="5"<bold>Password</bold></font></label>
+			<input type="password" class="form-control" name="password">
+		</div>
+
+		<button type="submit" class="btn btn-warning btn-lg">Signup</button>
+	</form>
+
+	<hr>
+
+	<font size="4"<p>Already have an account? <a href="/login">Login</a></p></font>
+	<font size="4"<p>Or go <a href="/">home</a>.</p></font>
+
+	<div class="text-center">
+		<p>A demo by <a href="http://scotch.io">Scotch</a>.</p>
+		<p>Visit the <a href="http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local">tutorial</a>.</p>
+	</div>
+
+</div>
+</div>
+</body>
+</html>
